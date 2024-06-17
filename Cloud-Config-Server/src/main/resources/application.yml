@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Cloud-Config-Server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/gazizulin24/repo-for-config-server
+          skipSslValidation: true
+          default-label: main
+
+server:
+  port: 8081
